@@ -4,12 +4,17 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class CargarDatos {
-    private String _ficheroAtributos;
-    private String _ficheroDatos;
+    private String _ficheroAtributos ="AtributosEx2019.txt";//"AtributosEx2019.txt";;AtributosJuego
+    private String _ficheroDatos  = "Ex2019.txt";//"Ex2019.txt";Juego
     private String[] _colName;
     private ArrayList<String[]> _datos;
+    //pruebas
+
 
     public CargarDatos(){
         _colName = null;
@@ -19,7 +24,7 @@ public class CargarDatos {
             if(_colName!=null){
                 cargaFicheroDatos();
                 if(!_datos.isEmpty()){
-
+                   new ID3(_colName,_datos);
                 }
                 else throw new IOException("ii");
             }
@@ -29,6 +34,7 @@ public class CargarDatos {
 
         }
     }
+
     private void cargaFicheroDatos() throws IOException {
         String cadena;
         FileReader f = new FileReader(_ficheroDatos);
