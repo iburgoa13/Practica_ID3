@@ -9,8 +9,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class CargarDatos {
-    private String _ficheroAtributos ="AtributosEx2019.txt";//"AtributosEx2019.txt";;AtributosJuego;;AtributosTO;AtributosEJIC
-    private String _ficheroDatos  = "Ex2019.txt";//"Ex2019.txt";Juego;TO; EJIC
+    private String _ficheroAtributos ="AtributosJuego.txt";//"AtributosEx2019.txt";;AtributosJuego;;AtributosTO;AtributosEJIC
+    private String _ficheroDatos  = "Juego.txt";//"Ex2019.txt";Juego;TO; EJIC
     private String[] _colName;
     private ArrayList<String[]> _datos;
     //pruebas

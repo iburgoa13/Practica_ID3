@@ -2,6 +2,7 @@ package logica;
 
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -20,12 +21,15 @@ public class ID3 {
     private ArrayList<Nodo> nodos;
     private HashMap<String,ArrayList<String>> _mapaNombreDatos;
     private ArrayList<Nodo> auxiliar ;
-
-
+    private String ruta = "src/salida.txt";
+    private String id3 ;
     private ArrayList<ArrayList<String>> _posiblesRespuestas;
     private int _numRecursion;
-    public ID3(String[] c, ArrayList<String []> d){
+    public ID3(String[] c, ArrayList<String []> d) throws IOException {
         _numRecursion = 0;
+
+
+        id3="";
         _colName = c;
         _datos = d;valores = new HashMap<>();
         _nodosRestantes = new ArrayList<>();
@@ -41,10 +45,18 @@ public class ID3 {
             }
         }*/
         while(recursion()){} //&& _numRecursion!=3){}
+        File file = new File(ruta);
+        if(!file.exists()){
+            file.createNewFile();
+        }
+        FileWriter fw = new FileWriter(file);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(id3);
+        bw.close();
     }
     private void recursividad(Nodo n){
         if(n.getPadre()!=null){
-            System.out.println(n.getPadre().get_nombre());
+            id3+=n.getPadre().get_nombre()+"\n";//System.out.println(n.getPadre().get_nombre());
             recursividad(n.getPadre());
         }
     }
@@ -57,7 +69,7 @@ public class ID3 {
             return n.get_datosTabla().get(0)[0];
 
     }
-    private boolean recursion(){
+    private boolean recursion() {
         ArrayList<Nodo> auxNodo = new ArrayList<>();
         for(Nodo n: nodos){
             auxNodo.add(n);
@@ -75,11 +87,13 @@ public class ID3 {
                 else p = n.getPadre().get_nombre();
                 System.out.println("SOY ITERACION " +_numRecursion +" con el Nodo de " + n.get_nombre() +" Y MI PADRE ES "+p);
                 if(n.get_datosTabla().size()==1 && n.get_datosTabla().get(0).length==1){
+
+
                     if(n.get_datosTabla().get(0)[0]==null){
-                        System.out.println("HAS LLEGADO AL FINAL Y EL RESULTADO ES " + recuperarDato(n.getPadre()));
+                        id3+= "HAS LLEGADO AL FINAL Y EL RESULTADO ES " + recuperarDato(n.getPadre())+"\n";//System.out.println("HAS LLEGADO AL FINAL Y EL RESULTADO ES " + recuperarDato(n.getPadre()));
                     }
-                    else System.out.println("HAS LLEGADO AL FINAL Y EL RESULTADO ES "+ n.get_datosTabla().get(0)[0]);
-                    System.out.println(n.get_nombre());
+                    else id3+="HAS LLEGADO AL FINAL Y EL RESULTADO ES "+ n.get_datosTabla().get(0)[0]+"\n";//System.out.println("HAS LLEGADO AL FINAL Y EL RESULTADO ES "+ n.get_datosTabla().get(0)[0]);
+                    id3+= n.get_nombre()+"\n";//System.out.println(n.get_nombre());
                     recursividad(n);
                 }
                 else primeraVuelta(n,n.get_datosTabla(),n.get_nombreTabla());
