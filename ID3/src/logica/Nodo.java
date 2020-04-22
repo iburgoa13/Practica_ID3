@@ -15,6 +15,13 @@ public class Nodo {
         padre = null;
         _nombre = nombre;
     }
+    public Nodo(ArrayList<String[]> d, String [] tabla, String h, String nombre, Nodo p){
+        _datosTabla = d;
+        _nombreTabla = tabla;
+        hijo = h;
+        padre = p;
+        _nombre = nombre;
+    }
 
     public String get_nombre() {
         return _nombre;
