@@ -9,8 +9,8 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class CargarDatos {
-    private String _ficheroAtributos ="AtributosJuego.txt";//"AtributosEx2019.txt";;AtributosJuego;;AtributosTO;AtributosEJIC
-    private String _ficheroDatos  = "Juego.txt";//"Ex2019.txt";Juego;TO; EJIC
+    private String _ficheroAtributos ="AtributosTO.txt";//"AtributosEx2019.txt";;AtributosJuego;;AtributosTO;AtributosEJIC
+    private String _ficheroDatos  = "TO.txt";//"Ex2019.txt";Juego;TO; EJIC
     private String[] _colName;
     private ArrayList<String[]> _datos;
     //pruebas
@@ -24,6 +24,7 @@ public class CargarDatos {
             if(_colName!=null){
                 cargaFicheroDatos();
                 if(!_datos.isEmpty()){
+
                    new ID3(_colName,_datos);
                 }
                 else throw new IOException("ii");
