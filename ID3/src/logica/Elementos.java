@@ -3,8 +3,8 @@ package logica;
 public class Elementos {
     private String _nombre;
     private int _rep;
-    int n,p;
-    double r,merito;
+    private int n,p;
+    private double r,merito;
     public Elementos(String ne){
         _nombre = ne;
         _rep = 1;

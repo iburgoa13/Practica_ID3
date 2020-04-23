@@ -4,17 +4,12 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 
 public class CargarDatos {
-    private String _ficheroAtributos ="AtributosTO.txt";//"AtributosEx2019.txt";;AtributosJuego;;AtributosTO;AtributosEJIC
-    private String _ficheroDatos  = "TO.txt";//"Ex2019.txt";Juego;TO; EJIC
+    private String _ficheroAtributos ="AtributosEx2019.txt";//"AtributosEx2019.txt";;AtributosJuego;;AtributosTO;AtributosEJIC
+    private String _ficheroDatos  = "Ex2019.txt";//"Ex2019.txt";Juego;TO; EJIC
     private String[] _colName;
     private ArrayList<String[]> _datos;
-    //pruebas
-
 
     public CargarDatos(){
         _colName = null;
@@ -27,12 +22,12 @@ public class CargarDatos {
 
                    new ID3(_colName,_datos);
                 }
-                else throw new IOException("ii");
+                else throw new IOException("Ficheros no encontrados");
             }
-            else throw new IOException("ii");
+            else throw new IOException("Ficheros no encontrados");
         }
         catch (IOException i){
-
+            System.out.println(i.getMessage());
         }
     }
 
@@ -42,8 +37,7 @@ public class CargarDatos {
         BufferedReader b = new BufferedReader(f);
         while ((cadena = b.readLine()) != null) {
             String[] aux = cadena.split(",");
-            // Para que no coja lineas en blanco
-            if(!aux[0].equalsIgnoreCase(""))
+          if(!aux[0].equalsIgnoreCase(""))
                 _datos.add(aux);
         }
         b.close();
