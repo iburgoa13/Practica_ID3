@@ -1,0 +1,277 @@
+Merito de soleado : 0.3467680694480959
+Merito de lluvioso : 0.3467680694480959
+Merito de nublado : 0.0
+Merito de la variable principal TiempoExterior: 0.6935361388961918
+Merito de caluroso : 0.2857142857142857
+Merito de frio : 0.23179374984546652
+Merito de templado : 0.39355535745192405
+Merito de la variable principal Temperatura: 0.9110633930116763
+Merito de normal : 0.29583638929116374
+Merito de alta : 0.4926140680171258
+Merito de la variable principal Humedad: 0.7884504573082896
+Merito de verdad : 0.42857142857142855
+Merito de falso : 0.46358749969093305
+Merito de la variable principal Viento: 0.8921589282623617
+La cabeza del arbol es: TiempoExterior con un merito de : 0.6935361388961918
+ARBOL : TiempoExterior
+Ramificacion 0 : soleado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+caluroso  alta  falso  no  
+caluroso  alta  verdad  no  
+templado  alta  falso  no  
+frio  normal  falso  si  
+templado  normal  verdad  si  
+Ramificacion 1 : nublado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+caluroso  alta  falso  si  
+frio  normal  verdad  si  
+templado  alta  verdad  si  
+caluroso  normal  falso  si  
+Ramificacion 2 : lluvioso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :2
+templado  alta  falso  si  
+frio  normal  falso  si  
+frio  normal  verdad  no  
+templado  normal  falso  si  
+templado  alta  verdad  no  
+PADRE PRINCIPAL TiempoExterior
+Merito de caluroso : 0.0
+Merito de frio : 0.0
+Merito de templado : 0.4
+Merito de la variable principal Temperatura: 0.4
+Merito de normal : 0.0
+Merito de alta : 0.0
+Merito de la variable principal Humedad: 0.0
+Merito de verdad : 0.4
+Merito de falso : 0.5509775004326937
+Merito de la variable principal Viento: 0.9509775004326937
+La cabeza del arbol es: Humedad con un merito de : 0.0
+ARBOL : Humedad
+Ramificacion 0 : alta:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+caluroso  falso  no  
+caluroso  verdad  no  
+templado  falso  no  
+Ramificacion 1 : normal:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+frio  falso  si  
+templado  verdad  si  
+PADRE PRINCIPAL TiempoExterior
+Merito de caluroso : 0.0
+Merito de frio : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de normal : 0.0
+Merito de alta : 0.0
+Merito de la variable principal Humedad: 0.0
+Merito de verdad : 0.0
+Merito de falso : 0.0
+Merito de la variable principal Viento: 0.0
+La cabeza del arbol es: Viento con un merito de : 0.0
+ARBOL : Viento
+Ramificacion 0 : falso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+caluroso  alta  si  
+caluroso  normal  si  
+Ramificacion 1 : verdad:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+frio  normal  si  
+templado  alta  si  
+PADRE PRINCIPAL TiempoExterior
+Merito de frio : 0.4
+Merito de templado : 0.5509775004326937
+Merito de la variable principal Temperatura: 0.9509775004326937
+Merito de normal : 0.5509775004326937
+Merito de alta : 0.4
+Merito de la variable principal Humedad: 0.9509775004326937
+Merito de verdad : 0.0
+Merito de falso : 0.0
+Merito de la variable principal Viento: 0.0
+La cabeza del arbol es: Viento con un merito de : 0.0
+ARBOL : Viento
+Ramificacion 0 : falso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+templado  alta  si  
+frio  normal  si  
+templado  normal  si  
+Ramificacion 1 : verdad:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+frio  normal  no  
+templado  alta  no  
+Merito de caluroso : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de verdad : 0.0
+Merito de falso : 0.0
+Merito de la variable principal Viento: 0.0
+La cabeza del arbol es: Viento con un merito de : 0.0
+ARBOL : Viento
+Ramificacion 0 : falso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+caluroso  no  
+templado  no  
+Ramificacion 1 : verdad:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+caluroso  no  
+Merito de frio : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de verdad : 0.0
+Merito de falso : 0.0
+Merito de la variable principal Viento: 0.0
+La cabeza del arbol es: Viento con un merito de : 0.0
+ARBOL : Viento
+Ramificacion 0 : falso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+frio  si  
+Ramificacion 1 : verdad:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+templado  si  
+Merito de caluroso : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de normal : 0.0
+Merito de alta : 0.0
+Merito de la variable principal Humedad: 0.0
+La cabeza del arbol es: Humedad con un merito de : 0.0
+ARBOL : Humedad
+Ramificacion 0 : alta:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+caluroso  si  
+Ramificacion 1 : normal:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+caluroso  si  
+Merito de frio : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de normal : 0.0
+Merito de alta : 0.0
+Merito de la variable principal Humedad: 0.0
+La cabeza del arbol es: Humedad con un merito de : 0.0
+ARBOL : Humedad
+Ramificacion 0 : normal:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+frio  si  
+Ramificacion 1 : alta:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+templado  si  
+Merito de frio : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de normal : 0.0
+Merito de alta : 0.0
+Merito de la variable principal Humedad: 0.0
+La cabeza del arbol es: Humedad con un merito de : 0.0
+ARBOL : Humedad
+Ramificacion 0 : alta:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+templado  si  
+Ramificacion 1 : normal:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+frio  si  
+templado  si  
+Merito de frio : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+Merito de normal : 0.0
+Merito de alta : 0.0
+Merito de la variable principal Humedad: 0.0
+La cabeza del arbol es: Humedad con un merito de : 0.0
+ARBOL : Humedad
+Ramificacion 0 : normal:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+frio  no  
+Ramificacion 1 : alta:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+templado  no  
+Merito de caluroso : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : caluroso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+no  
+Ramificacion 1 : templado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+no  
+Merito de caluroso : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : caluroso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+no  
+Merito de frio : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : frio:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : templado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de caluroso : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : caluroso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de caluroso : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : caluroso:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de frio : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : frio:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : templado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : templado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Merito de frio : 0.0
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : frio:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+si  
+Ramificacion 1 : templado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :1
+si  
+Merito de frio : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : frio:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+no  
+Merito de templado : 0.0
+Merito de la variable principal Temperatura: 0.0
+La cabeza del arbol es: Temperatura con un merito de : 0.0
+ARBOL : Temperatura
+Ramificacion 0 : templado:
+-----DATOS TABLA DE LA NUEVA RAMIFICACION :0
+no  

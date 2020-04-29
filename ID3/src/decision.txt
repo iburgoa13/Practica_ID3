@@ -1,0 +1,15 @@
+LA DECISION ES no para los atributos: caluroso falso alta soleado 
+LA DECISION ES no para los atributos: templado falso alta soleado 
+LA DECISION ES no para los atributos: caluroso verdad alta soleado 
+LA DECISION ES si para los atributos: frio falso normal soleado 
+LA DECISION ES si para los atributos: templado verdad normal soleado 
+LA DECISION ES si para los atributos: caluroso alta falso nublado 
+LA DECISION ES si para los atributos: caluroso normal falso nublado 
+LA DECISION ES si para los atributos: frio normal verdad nublado 
+LA DECISION ES si para los atributos: templado alta verdad nublado 
+LA DECISION ES si para los atributos: templado alta falso lluvioso 
+LA DECISION ES si para los atributos: frio normal falso lluvioso 
+LA DECISION ES si para los atributos: templado normal falso lluvioso 
+LA DECISION ES no para los atributos: frio normal verdad lluvioso 
+LA DECISION ES no para los atributos: templado alta verdad lluvioso 
+Numero de recursiones realizadas en el arbol : 4
