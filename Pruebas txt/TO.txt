@@ -1,0 +1,14 @@
+alta,A,S,NOT,no
+alta,A,S,YES,no
+normal,A,S,NOT,si
+baja,N,S,NOT,si
+baja,B,NOO,NOT,si
+baja,B,NOO,YES,no
+normal,B,N,YES,si
+alta,N,S,NOT,no
+alta,B,NOO,NOT,si
+baja,N,NOO,NOT,si
+alta,N,NOO,YES,si
+normal,N,S,YES,si
+normal,A,NOO,NOT,si
+baja,N,S,YES,no

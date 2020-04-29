@@ -1,0 +1,6 @@
+u1,v1,w1,si
+u1,v2,w2,no
+u2,v1,w1,si
+u3,v2,w1,no
+u1,v1,w2,si
+u3,v1,w2,no
